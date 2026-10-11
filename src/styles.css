@@ -1,0 +1,109 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0b0d13;
+    --surface: #11151f;
+    --surface-2: #161b28;
+    --text: #e8edf6;
+    --muted: #929aaa;
+    --line: #293040;
+    --accent: #7c70ff;
+    --accent-2: #5c9dff;
+    --green: #7be0ad;
+    --header: rgba(11, 13, 19, 0.78);
+  }
+
+  :root[data-theme='light'] {
+    --bg: #f5f6fa;
+    --surface: #ffffff;
+    --surface-2: #eef0f8;
+    --text: #151928;
+    --muted: #687084;
+    --line: #dfe2eb;
+    --accent: #5f55df;
+    --accent-2: #2777dc;
+    --header: rgba(245, 246, 250, 0.82);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-bg font-sans text-content antialiased;
+  }
+
+  /* Offset anchor targets so they are not hidden behind the sticky header. */
+  main [id] {
+    scroll-margin-top: 92px;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    @apply mt-0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  header .mx-auto {
+    width: calc(100vw - 32px);
+    max-width: 560px;
+  }
+
+  #home {
+    width: calc(100vw - 32px);
+    max-width: 560px;
+    margin-inline: auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #home > div:first-child,
+  #home > div:last-child {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #home h1 {
+    max-width: 100%;
+    font-size: clamp(36px, 10vw, 44px);
+    line-height: 1.02;
+    letter-spacing: -0.065em;
+    overflow-wrap: anywhere;
+  }
+
+  #home > div:first-child > p {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  #home > div:last-child > div:nth-child(4) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #home > div:last-child > div:nth-child(4) > div:nth-child(2) > div:first-child {
+    font-size: 54px;
+  }
+}
