@@ -258,9 +258,7 @@ function App() {
                   <Mail size={17} /> Get in touch
                 </a>
               </div>
-              <div className="flex items-center gap-2 text-[11px] text-muted">
-                <ShieldCheck size={16} /> Verified experience · Privacy-conscious portfolio
-              </div>
+              
             </div>
 
             <div className="relative mt-[30px] grid min-h-[420px] place-items-center md:mt-0 md:min-h-[430px]" aria-label="Quality engineering capability overview">
