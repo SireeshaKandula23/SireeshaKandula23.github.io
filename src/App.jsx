@@ -241,6 +241,7 @@ function App() {
                 <span className="inline-block h-1.5 w-1.5 rounded-full bg-positive shadow-[0_0_0_4px_rgba(123,224,173,.1)]" />
                 Open to new opportunities
               </div>
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-label text-accent-2">QA ENGINEER / SDET / BA-READY</p>
               <h1 className="my-[22px] text-display-sm font-extrabold md:text-display">
                 I build confidence
                 <br />
