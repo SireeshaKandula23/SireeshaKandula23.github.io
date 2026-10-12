@@ -487,6 +487,7 @@ function App() {
                 <div className={`${cardBase} p-6`}>
                                     <h4 className="mb-1.5 mt-0 text-[15px]">Fundamentals of Generative AI</h4>
                   <p className="m-0 text-[11px] text-muted">Certification covering foundational concepts in generative AI.</p>
+                  <a className="mt-4 inline-flex items-center gap-1.5 text-[11px] font-semibold text-accent-2 hover:text-content" href="https://www.guvi.in/verify-certificate?id=K02I78PZ33635M11k1" target="_blank" rel="noreferrer">Verify certificate <ArrowUpRight size={14} /></a>
                 </div>
               </div>
             </div>          </div>
