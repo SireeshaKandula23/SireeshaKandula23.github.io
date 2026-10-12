@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ArrowUpRight,
   Check,
@@ -57,14 +57,14 @@ const roles = [
     title: 'QA Engineer',
     company: 'Dhan AI',
     domain: 'Telecom & CRM',
-    period: 'May 2025 â€” Present',
+    period: 'May 2025 — Present',
     current: true,
     points: [
       { text: 'Own QA across the delivery lifecycle, from requirement analysis and test planning through release validation.' },
       { strong: 'Designed and executed 2,000+ test cases', text: ' spanning functional, regression, integration, API, and end-to-end coverage.' },
       { strong: 'Automated 190+ API scenarios', text: ' in Postman, including chained workflows, data-driven validation, and pricing and business-rule checks.' },
       { text: 'Built UI automation with Playwright, TypeScript, and the Page Object Model to strengthen regression coverage.' },
-      { text: 'Established QA process for a product built from the ground up â€” test planning, traceability, defect management, and release validation.' },
+      { text: 'Established QA process for a product built from the ground up — test planning, traceability, defect management, and release validation.' },
       { text: 'Partner with engineering, architecture, and product teams to surface risk and drive complex defects to resolution.' },
     ],
     tags: ['Playwright', 'TypeScript', 'Postman', 'API automation', 'AI-assisted testing'],
@@ -73,7 +73,7 @@ const roles = [
     title: 'Associate QA Engineer',
     company: 'Accenture',
     domain: 'Enterprise web applications',
-    period: 'June 2023 â€” June 2024',
+    period: 'June 2023 — June 2024',
     current: false,
     points: [
       { text: 'Delivered end-to-end QA for customer-facing web applications in an Agile environment.' },
@@ -89,7 +89,7 @@ const roles = [
 
 const projects = [
   {
-    period: 'May 2025 â€” Present',
+    period: 'May 2025 — Present',
     title: 'Telecom Customer Self-Service Portal',
     text: 'Tested telecom onboarding, service management, and customer account workflows, including API validation, backend verification, and release-readiness testing.',
     tags: ['Telecom', 'API testing', 'Backend validation'],
@@ -101,7 +101,7 @@ const projects = [
     tags: ['AI-assisted testing', 'Exploratory', 'End-to-end'],
   },
   {
-    period: 'September 2023 â€” June 2024',
+    period: 'September 2023 — June 2024',
     title: 'Enterprise Vacation & Resort Booking',
     text: 'Automated booking validation and promotional-offer scenarios, tested across multiple environments, and supported release-validation activities.',
     tags: ['Selenium', 'Java', 'Release validation'],
@@ -258,7 +258,7 @@ function App() {
                 </a>
               </div>
               <div className="flex items-center gap-2 text-[11px] text-muted">
-                <ShieldCheck size={16} /> Verified experience Â· Privacy-conscious portfolio
+                <ShieldCheck size={16} /> Verified experience · Privacy-conscious portfolio
               </div>
             </div>
 
@@ -386,7 +386,7 @@ function App() {
                     <div>
                       <h3 className="mb-[7px] text-xl tracking-[-0.04em]">{role.title}</h3>
                       <p className="text-xs text-accent-2">
-                        {role.company} <span className="mx-[5px] text-muted">Â·</span> {role.domain}
+                        {role.company} <span className="mx-[5px] text-muted">·</span> {role.domain}
                       </p>
                     </div>
 
@@ -572,10 +572,10 @@ function App() {
       </main>
 
       <footer className={`${wrap} flex min-h-[70px] flex-wrap items-center justify-between gap-3 py-5 text-[10px] text-muted md:flex-nowrap md:py-0`}>
-        <span>Â© 2026 Sireesha Kandula</span>
+        <span>© 2026 Sireesha Kandula</span>
         <span>Designed for clarity. Built for confidence.</span>
         <a className="text-content" href="#home">
-          Back to top â†‘
+          Back to top ↑
         </a>
       </footer>
     </div>
